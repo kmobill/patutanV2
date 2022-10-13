@@ -1,0 +1,375 @@
+/*GLOBAL VARIABLES*/
+:root {
+  --titles-color-white: #fff;
+  --form-color-white: #fff;
+  --form-color-placeholder: #e1e0e0;
+  --color-cian: #00c0f1;
+  --font-size-big: 22px;
+}
+
+/*FONTS USEDS*/
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/font/Nunito/static/Nunito-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/font/Nunito/static/Nunito-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/font/Nunito/static/Nunito-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* RESSETS STYLES */
+/* input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+input:-internal-autofill-selected {
+  background-color: transparent!important;
+} */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*REMOVE STYLING <a/>*/
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: Nunito;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+/* body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ */
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+MODAL
+*/
+[data-carousel-active-1],
+[data-carousel-active-2],
+[data-carousel-active-3],
+[data-carousel-active-4],
+[data-carousel-active-5],
+[data-carousel-active-6],
+[data-carousel-active-7],
+[data-carousel-active-8],
+[data-carousel-active-9],
+[data-carousel-active-10],
+[data-carousel-active-11],
+[data-carousel-active-12] {
+  display: block !important;
+}
+
+#signIn-window {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#signIn-window > span {
+  transition: 0.3s;
+}
+#signIn-window > form {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*No arrows*/
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.no-arrows[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*custum marker li*/
+
+/* ul li::marker {
+  color: red!important;
+  font-size: 1.5em;
+} */
+
+/*START NAVBAR*/
+
+.navbar_fondo1 {
+  /* width: 100%; */
+  z-index: 2;
+  font-family: Nunito;
+  background-image: url("../assets/images/navbar.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+.input_search {
+  height: 28px;
+  width: 100px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.input_search > input {
+  background: none;
+  margin-left: 12px;
+  height: 80%;
+  width: 72%;
+  border: none;
+  color: #636363;
+}
+.input_search > input:focus {
+  outline: none;
+}
+.input_search img {
+  max-height: 20px;
+  transition: transform ease-in-out 0.35s;
+  cursor: pointer;
+}
+.input_search img:hover {
+  transform: scale(0.9);
+}
+.navbar_fondo1 img {
+  cursor: pointer;
+}
+.btns_container li {
+  cursor: pointer;
+  background-color: #093d6897;
+  color: #fff;
+}
+.btns_container li:hover {
+  background-color: #72a1b297;
+}
+.btns_container > div > div > button:hover {
+  background-color: #06c4f9ae;
+}
+
+@media only screen and (min-width: 380px) {
+  /* #nav_barra {
+    justify-content: flex-end;
+  } */
+} /* 
+@media only screen and (min-width: 1024px) {
+  #nav_barra{
+    justify-content: flex-end;
+   } 
+  }
+  */
+
+/*END NAVBAR*/
+
+.scale-1-1 {
+  transition: transform ease-in-out 0.2s;
+}
+.scale-1-1:hover {
+  transform: scale(1.1);
+}
+
+.nav_btn li > ul {
+  transform: translatex(100%) scale(0);
+}
+.nav_btn li:hover > ul {
+  transform: translatex(101%) scale(1);
+}
+.nav_btn li > button svg {
+  transform: rotate(-90deg);
+}
+.nav_btn li:hover > button svg {
+  transform: rotate(-270deg);
+}
+
+.nav_btn .group:hover .group-hover\:scale-100 {
+  transform: scale(1);
+}
+.nav_btn.group:hover .group-hover\:-rotate-180 {
+  transform: rotate(180deg);
+}
+.nav_btn .scale-0 {
+  transform: scale(0);
+}
+.nav_btn.min-w-32 {
+  min-width: 8rem;
+}
+/*
+  SERVICES
+*/
+
+/* .section-services { */
+/* background-image: url("../assets/images/barra\ posterior\ servicios.png");
+  background-size: 1400px;
+  background-position: center; */
+/* } */
+/*CARD*/
+.gradient-blue {
+  /* background-image: linear-gradient(
+  90deg,
+  hsl(212deg 100% 52%) 0%,
+  hsl(202deg 100% 85%) 20%,
+  hsl(191deg 100% 92%) 40%,
+  hsl(191deg 100% 92%) 60%,
+  hsl(200deg 99% 85%) 80%,
+  hsl(212deg 99% 62%) 100%
+); */
+  background-image: linear-gradient(
+    90deg,
+    hsl(221deg 75% 25%) 0%,
+    hsl(211deg 66% 35%) 8%,
+    hsl(208deg 63% 43%) 17%,
+    hsl(206deg 62% 50%) 25%,
+    hsl(206deg 62% 52%) 33%,
+    hsl(206deg 63% 54%) 42%,
+    hsl(206deg 64% 56%) 50%,
+    hsl(206deg 58% 52%) 58%,
+    hsl(206deg 57% 48%) 67%,
+    hsl(206deg 62% 44%) 75%,
+    hsl(208deg 64% 38%) 83%,
+    hsl(212deg 67% 33%) 92%,
+    hsl(221deg 75% 25%) 100%
+  );
+  /* background-image: linear-gradient(
+  90deg,
+  hsl(221deg 75% 25%) 0%,
+  hsl(214deg 74% 31%) 8%,
+  hsl(209deg 69% 37%) 17%,
+  hsl(206deg 62% 44%) 25%,
+  hsl(206deg 62% 44%) 33%,
+  hsl(206deg 62% 44%) 42%,
+  hsl(206deg 62% 44%) 50%,
+  hsl(206deg 62% 44%) 58%,
+  hsl(206deg 62% 44%) 67%,
+  hsl(206deg 62% 44%) 75%,
+  hsl(209deg 69% 37%) 83%,
+  hsl(214deg 74% 31%) 92%,
+  hsl(221deg 75% 25%) 100%
+); */
+}
+.body-card {
+  background: rgb(1, 25, 148);
+  background-image: linear-gradient(
+    45deg,
+    hsl(230deg 99% 29%) 0%,
+    hsl(226deg 99% 29%) 20%,
+    hsl(217deg 90% 30%) 40%,
+    hsl(204deg 86% 31%) 60%,
+    hsl(188deg 80% 36%) 80%,
+    hsl(174deg 96% 60%) 100%
+  );
+}
+/*BUTTON SIMULADOR*/
+
+.btn_simulador {
+  background-image: linear-gradient(
+    90deg,
+    hsl(230deg 99% 29%) 0%,
+    hsl(221deg 100% 30%) 8%,
+    hsl(214deg 100% 30%) 17%,
+    hsl(208deg 99% 29%) 25%,
+    hsl(210deg 100% 36%) 33%,
+    hsl(215deg 81% 47%) 42%,
+    hsl(221deg 96% 60%) 50%,
+    hsl(220deg 70% 50%) 58%,
+    hsl(219deg 78% 40%) 67%,
+    hsl(216deg 99% 29%) 75%,
+    hsl(220deg 100% 29%) 83%,
+    hsl(224deg 100% 29%) 92%,
+    hsl(230deg 99% 29%) 100%
+  );
+}
+/*SIDEBAR2*/
+
+@media only screen and (max-width: 800px) {
+  .sidebar-2-container {
+    left: calc(100% - 40px) !important;
+  }
+}
+/*Footer*/
+
+@media only screen and (max-width: 380px) {
+  #footer-encuentranos-flex {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+}

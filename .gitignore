@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+
+blog
+images
+new_images
+*/images/*
+images/*
+*.mp4
+assets
+node_modules
+images/EducacionFinanciera/*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>Patutan Login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body style="background: linear-gradient(90deg, rgba(10,109,112,1) 0%, rgba(56,110,61,1) 35%, rgba(112,109,4,1) 100%);">
+    <div class="container">
+        <div class="abs-center" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+            <form action="dataBase/login.php" method="POST"
+                style="background-color: rgba(100,185,189, 0.6); padding-top: 10px; padding-left: 30px; padding-right: 30px; padding-bottom: 10px;">
+                <div class="form-group">
+                    <img class="img-fluid" width="300px"
+                        src="../images/ARCHIVOS NUEVOS/Logo/Nuevo-Logol-Horizontal-Colores.png" alt="">
+                </div>
+                <br>
+                <br>
+                <div class="form-group" style="padding-left: 30px; padding-right: 20px;">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <i style="opacity: 0.5;" class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-sm">
+                            <input name="usuario"
+                                style="border: 0; outline: 0; background: transparent; border-bottom: 1px solid #192e81;"
+                                type="text" placeholder="Usuario" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group" style="padding-left: 30px; padding-right: 20px;">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <i style="opacity: 0.5;" class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-sm">
+                            <input name="contraseña"
+                                style="border: 0; outline: 0; background: transparent; border-bottom: 1px solid #192e81;"
+                                type="password" placeholder="Contraseña" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group" style="text-align: center;">
+                    <div class="row">
+                        <div class="col-sm">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <FONT size=2>Recordar</font>
+                        </div>
+                        <div class="col-sm">
+                            <FONT size=2>Olvide contraseña?</font>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="abs-center" style="display: flex; align-items: center; justify-content: center;">
+                            <div style="position: absolute;">
+                                <button id="botonIngreso" type="submit" class="btn"
+                                    style="background-color: rgba(5,30,106,0.8); color: white; width: 450px;">
+                                    <h5 style="padding-top: 10px; padding-bottom: 10px;">INGRESAR</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div style="color: white; text-align: center; padding-bottom: 10px;">
+                    Registrarse
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        if (window.innerWidth <= 455) {
+            $('#botonIngreso').css('width', '370px');
+        }
+        if (window.innerWidth <= 370) {
+            $('#botonIngreso').css('width', '250px');
+        }
+    });
+</script>
